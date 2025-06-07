@@ -1,0 +1,85 @@
+/* Базовые стили */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #ffe9ec, #fff7e6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Карточка */
+.card {
+    background: #fff;
+    padding: 30px 25px;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+    text-align: center;
+    max-width: 90%;
+    width: 400px;
+    animation: fadeIn 1.2s ease-in-out;
+}
+
+/* Заголовок */
+h1 {
+    color: #ff4f81;
+    font-size: 2.4em;
+    margin: 0.3em 0;
+}
+
+/* Обычный текст */
+p {
+    color: #333;
+    font-size: 1.25em;
+    line-height: 1.6;
+    margin: 1em 0;
+}
+
+/* Подпись */
+.from {
+    margin-top: 25px;
+    font-style: italic;
+    color: #666;
+}
+
+/* Анимация шариков */
+.balloons {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    animation: float 2.5s infinite ease-in-out;
+}
+
+/* Анимации */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-12px); }
+}
+
+/* Медиа-запрос для iPhone и узких экранов */
+@media (max-width: 480px) {
+    .card {
+        padding: 25px 20px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    p {
+        font-size: 1.15em;
+    }
+
+    .balloons {
+        font-size: 2em;
+    }
+}
+.cel{
+      font-size:2em;
+}
